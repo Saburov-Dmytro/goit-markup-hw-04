@@ -1,0 +1,546 @@
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --logo-color: #000000;
+  --text-color: #757575;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --background-button-color: #f5f4fa;
+  --background-header-color: #ffffff;
+  --white-text-background-color: rgba(255, 255, 255, 1);
+  --white-contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+/* Стили семейства шрифтов и обнуление марджинов для боди */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* Убираем маркеры и обнуляем верхний и нижний марджины списков*/
+ul, ol{
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* Обнуляем стили заголовков и парагарофов, заданые системой по умолчанию */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Блочная модель для пикч с макс шириной картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* padding-top: 94px; */
+  /* padding-bottom: 47px; */
+}
+
+/* Убираем подчеркивание у ссылок */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+/* Цвет фона хэдэра */
+.header {
+  background-color: var(--white-text-background-color);
+  border-bottom: 1px solid #ECECEC;
+}
+
+/* Логотип*/
+.logo {
+  display: block;
+  margin-right: 93px;
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+/* Цветная часть логотипа */
+.logo-item {
+  color: var(--second-color);
+  margin-right: 0;
+}
+
+.footer .logo:focus {
+  color: var(--white-text-background-color);
+}
+/* Навигация*/
+.nav-list .link {
+  display: block;
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Ховверим и фокусим все ссылки меню, при наведении курсора */
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--second-color);
+}
+
+/* Показываем на какой мы сейчам активной странице меню */
+.nav-list .link.current {
+  color: var(--second-color);
+}
+
+/* Оформление ссылок email и tel */
+.contacts-list .link {
+  display: block;
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Ховерим и фокусим контакты, при наведении курсора */
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--second-color);
+}
+
+.nav-list,
+.contacts-list {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.main-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: block;
+}
+
+.nav-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.hero {
+  /* margin-left: auto; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  min-height: 600px;
+  text-align: center;
+}
+
+/* Герой */
+.hero-title {
+  color: var(--white-text-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  max-width: 696px;
+}
+
+/* Ссылка героя */
+.hero > .btn {
+  color: var(--white-text-background-color);
+  background-color: var(--second-color);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+ }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.different {
+  background-color: var(--white-text-background-color);
+    padding-top: 94px;
+}
+
+/* Заголовок Дифферент */
+.different-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+/* Абзацы секции с особеностями */
+.different-text {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.different-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+/* Размещаем блоки по 4 в строку и добавляем отступы между ними */
+.different-list > .different-item {
+  width: calc((100% - 120px) / 4);
+  /* flex-basis: calc(100% / 4 - 30px); */
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Стилизация заголовка Ворка */
+.work-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+/* Размещает блоки по 3 в строке. Добавляет отступы между ними */
+.work-item {
+  width: calc((100% / 3) - 30px);
+  /* flex-basis: calc(100% / 3 - 30px); */
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team {
+  background-color: var(--background-button-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Состав команды */
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-card-thumb {
+  background-color: var(--background-header-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Должности */
+.team-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 0;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-list > .team-item {
+  width: calc((100% / 4) - 30px);
+  /* flex-basis: calc(100% / 4 - 30px); */
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: var(--background-header-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Общий фон для героя и подвала */
+.hero,
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+/* Применяем отдельный стиль для логотипа футера */
+.footer .logo {
+  color: var(--white-text-background-color);
+}
+
+/* Фокусим цветом логотип при наведении  */
+.logo:focus {
+  color: var(--logo-color);
+}
+
+.footer-address-link {
+  color: var(--background-header-color);
+}
+
+/* Адрес */
+.address-text {
+  color: var(--background-header-color);
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address-contacts-item:first-child {
+  margin-bottom: 9px;
+}
+
+.contacts-item:first-child {
+  margin-right: 50px;
+}
+
+/* ссылки футера */
+.contacts-list-item {
+  display: block;
+  color: var(--white-contacts-color);
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Ховерим и фокусим ссылки футера */
+.contacts-list-item:hover,
+.contacts-list-item:focus {
+  color: var(--second-color);
+}
+
+/*  Стили кнопок */
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 73px;
+  min-height: 38px;
+  background-color: var(--background-button-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  }
+
+/* Ховерим и фокусим кнопки */
+.btn:hover,
+.btn:focus {
+  color: var(--background-header-color);
+  background-color: var(--second-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.project {
+  background-color: var(--white-text-background-color);
+  margin-top: -30px;
+  margin-left: -30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Границы проэктов */
+.project-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc((100% / 3) - 30px);
+}
+
+/* Стилизация заголовков проэктов */
+.project-title {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+/* Стилизация подписей проэктов */
+.project-text {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  display: block;
+  width: 370px;
+  height: 110px;
+}
+
+/* Кнопка hero index.html */
+.hero .btn {
+  color: var(--background-header-color);
+  background-color: var(--second-color);
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+ }
+
+/* Общие стили для контейнера */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.project .list:nth-child(3n) {
+  margin-right: 0;
+}
+
