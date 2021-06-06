@@ -232,6 +232,22 @@ img {
   padding-top: 94px;
 }
 
+.different-icon-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-button-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.different-icon {
+  width: 70px;
+  height: 70px;
+}
+
 /* Заголовок Дифферент */
 .different-title {
   color: var(--main-color);
