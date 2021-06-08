@@ -582,7 +582,8 @@ img {
 .clients-list {
   display: flex;
   margin: 0 auto;
-  padding-bottom: 94px  ;
+  padding-bottom: 94px;
+  justify-content: space-between;
 
 }
 
@@ -592,7 +593,7 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
 }
