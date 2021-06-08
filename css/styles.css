@@ -1,5 +1,5 @@
 :root {
-  --main-color: #212121;
+ --background-header-color: #212121;
   --second-color: #2196f3;
   --logo-color: #000000;
   --text-color: #757575;
@@ -161,6 +161,20 @@ img {
   margin-right: 0;
 }
 
+.contacts-icon-envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.contacts-icon-tel {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .hero {
   margin-right: auto;
   margin-left: auto;
@@ -232,7 +246,7 @@ img {
   padding-top: 94px;
 }
 
-.different-icon-box {
+.different-icons {
   display: flex;
   width: 270px;
   height: 120px;
@@ -548,7 +562,7 @@ img {
   margin: 0 auto;
   width: 1200px;
   height: auto;
-  color: var(--background-header-color);
+  color: inherit;
   padding-left: 15px;
   padding-right: 15px;
 }
