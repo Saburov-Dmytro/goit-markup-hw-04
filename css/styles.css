@@ -103,7 +103,7 @@ img {
 
 /* Оформление ссылок email и tel */
 .contacts-list .link {
-  display: block;
+  display: flex;
   color: var(--text-color);
   background-color: var(--white-text-background-color);
   font-weight: 500;
@@ -165,7 +165,7 @@ img {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  /* fill: currentColor; */
+  fill: currentColor;
 }
 
 .contacts-icon-tel {
