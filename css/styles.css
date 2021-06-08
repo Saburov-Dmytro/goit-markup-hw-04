@@ -1,5 +1,5 @@
 :root {
- --background-header-color: #212121;
+  --main-color: #212121;
   --second-color: #2196f3;
   --logo-color: #000000;
   --text-color: #757575;
@@ -599,12 +599,13 @@ img {
 }
 
 .clients-title {
-  color: var(--background-header-color);
+  color: var(--main-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 
