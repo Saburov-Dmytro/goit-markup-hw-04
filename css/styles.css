@@ -363,6 +363,8 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 /* Должности */
@@ -374,6 +376,7 @@ img {
   text-align: center;
   margin-top: 10px;
   padding-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .team-social-icon {
@@ -383,6 +386,19 @@ img {
 
 .team-social-list {
   display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-header-color);
 }
 
 .team-list {
