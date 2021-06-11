@@ -376,6 +376,15 @@ img {
   padding-bottom: 0;
 }
 
+.team-social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-list {
+  display: flex;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
