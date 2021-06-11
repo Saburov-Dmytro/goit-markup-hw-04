@@ -177,6 +177,7 @@ img {
 }
 
 .hero {
+  background-color: #C4C4C4;
   margin-right: auto;
   margin-left: auto;
   padding-top: 200px;
@@ -399,7 +400,6 @@ img {
 }
 
 /* Общий фон для героя и подвала */
-.hero,
 .footer {
   background-color: var(--footer-background-color);
 }
