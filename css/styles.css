@@ -7,6 +7,7 @@
   --footer-background-color: #2f303a;
   --background-button-color: #f5f4fa;
   --background-header-color: #ffffff;
+  --icon-bg-color: #AFB1B8;
   --white-text-background-color: rgba(255, 255, 255, 1);
   --white-contacts-color: rgba(255, 255, 255, 0.6);
   --border-color: rgba(238, 238, 238, 1);
@@ -379,16 +380,10 @@ img {
   margin-bottom: 16px;
 }
 
-.team-social-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .team-social-list {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-
 }
 
 .team-social-link {
@@ -398,7 +393,24 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--background-header-color);
+  color: var(--icon-bg-color);
+  background-color: transparent;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--second-color);
+}
+
+.team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-bg-color);
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: #ffffff;
 }
 
 .team-list {
@@ -406,6 +418,13 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.team-item {
+  background-color: var(--background-header-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list > .team-item {
