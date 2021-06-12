@@ -634,7 +634,7 @@ img {
 }
 
 .clients-item {
-  display: block;
+  display: flex;
   border: 1px solid #2196F3;
   border-radius: 4px;
   width: 170px;
@@ -659,4 +659,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.clients-button:hover .clients-icon,
+.clients-button:focus .clients-icon {
+  fill: var(--second-color);
 }
