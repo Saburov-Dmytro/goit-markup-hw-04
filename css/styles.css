@@ -112,6 +112,7 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
+  align-items: center;
 }
 
 /* Ховерим и фокусим контакты, при наведении курсора */
@@ -410,7 +411,7 @@ img {
 
 .team-social-link:hover .team-social-icon,
 .team-social-link:focus .team-social-icon {
-  fill: #ffffff;
+  fill: var(--background-header-color);
 }
 
 .team-list {
@@ -654,3 +655,8 @@ img {
   margin-bottom: 50px;
 }
 
+.clients-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
