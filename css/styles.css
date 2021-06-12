@@ -568,7 +568,7 @@ img {
   color: var(--accent-color);
 }
 
-.footer-tel:focus
+.footer-tel:focus,
 .footer-tel:hover  {
   color: var(--accent-color);
 }
